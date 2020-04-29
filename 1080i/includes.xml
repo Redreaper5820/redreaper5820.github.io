@@ -9,7 +9,6 @@
 	<include file="Includes_Home_Widgets_Setup.xml" />
 	<include file="IncludesVariables.xml" />
 	<include file="ViewsPictures.xml" />
-	<include file="IncludesTopMenu.xml" />
 	<include file="ViewsAddonBrowser.xml" />
 	<include file="ViewsLiveTV.xml" />
 	<include file="ViewsPVRGuide.xml" />
@@ -558,7 +557,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>stretch</aspectratio>
-				<texture>show_card.png</texture>
+				<texture>$INFO[ListItem.Art(landscape)]</texture>
 
 			</control>
 
@@ -612,7 +611,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>stretch</aspectratio>
-				<texture>show_card.png</texture>
+				<texture>$INFO[ListItem.Art(landscape)]</texture>
 
 			</control>
 
@@ -664,12 +663,14 @@
 			<control type="image">
 				<left>-20</left>
 				<top>6</top>
-				<width>430</width>
-				<height>350</height>
+				<width>400</width>
+				<height>275</height>
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>stretch</aspectratio>
 				<texture>show_card.png</texture>
+
+
 
 			</control>
 			<control type="image">
@@ -680,7 +681,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
+				<texture>$INFO[ListItem.Art(landscape)]</texture>
 			</control>
 			<control type="image">
 				<left>0</left>
@@ -713,14 +714,14 @@
 				<animation effect="zoom" end="110,110" center="auto" time="200">Focus</animation>
 				<animation effect="zoom" end="100,100" center="auto" time="200">Unfocus</animation>
 				<control type="image">
-					<left>-20</left>
+					<left>0</left>
 					<top>6</top>
-					<width>430</width>
-					<height>350</height>
+					<width>400</width>
+					<height>300</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<aspectratio>stretch</aspectratio>
-					<texture>show_card.png</texture>
+					<texture>$INFO[ListItem.Art(landscape)]</texture>
 				</control>
 
 				<control type="image">
@@ -767,7 +768,7 @@
 					<align>Left</align>
 					<aligny>Top</aligny>
 					<wrapmultiline>true</wrapmultiline>
-					<label>S$INFO[Listitem.Season]E$INFO[Listitem.Episode] - $INFO[Listitem.TVShowTitle]</label>
+					<label>-Watch Now-</label>
 				</control>
 				
 			</control>
@@ -1696,7 +1697,7 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				<label>1036</label>
+				<label></label>
 				<font>-</font>
 				<onclick>back</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
@@ -1721,7 +1722,7 @@
 				<top>0</top>
 				<width>45</width>
 				<height>45</height>
-				<label>31003</label>
+				<label></label>
 				<font>-</font>
 				<onclick>ActivateWindow(home)</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
@@ -1754,7 +1755,7 @@
 				<top>55r</top>
 				<width>45</width>
 				<height>45</height>
-				<label>31003</label>
+				<label></label>
 				<font>-</font>
 				<onclick>ActivateWindow(PlayerControls)</onclick>
 				<texturefocus border="5">floor_buttonFO.png</texturefocus>
@@ -2359,7 +2360,7 @@
 		<control type="radiobutton" id="611">
 			<description>Go to fullscreen Playback</description>
 			<include>ButtonCommonValues</include>
-			<label>31008</label>
+			<label></label>
 			<onclick>fullscreen</onclick>
 			<textureradioonfocus>GoFullscreen.png</textureradioonfocus>
 			<textureradioonnofocus>GoFullscreen.png</textureradioonnofocus>
@@ -2370,7 +2371,7 @@
 		<control type="button" id="612">
 			<description>Go to playlist</description>
 			<include>ButtonCommonValues</include>
-			<label>13350</label>
+			<label></label>
 			<onclick>$VAR[PlayList]</onclick>
 			<visible>[Window.IsActive(videolibrary) + !StringCompare(Playlist.Length(video),0)] | [[Window.IsActive(musiclibrary) | Window.IsActive(musicfiles)] + !StringCompare(Playlist.Length(music),0)]</visible>
 		</control>
@@ -2734,16 +2735,6 @@
 	</include>
 	<include name="KeyboardRadioButton">
 		<width>70</width>
-		<height>70</height>
-		<align>center</align>
-		<border>none</border>
-		<aligny>center</aligny>
-		<texturenofocus>-</texturenofocus>
-		<texturefocus>Keyboard_Btn_Focus.png</texturefocus>
-		<font>font30t</font>
-		<focusedcolor>white</focusedcolor>
-	</include>
-</includes>		<width>70</width>
 		<height>70</height>
 		<align>center</align>
 		<border>none</border>

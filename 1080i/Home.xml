@@ -424,8 +424,15 @@
 					<item id="2">
 						<label>Skin Settings</label>
 						<icon>icon2.png</icon>
-						<thumb>ic_settings_home.png</thumb>
-						<onclick>ActivateWindow(MyMusicLibrary)</onclick>
+						<thumb>ic_settings_wifi_0.png</thumb>
+						<onclick>ActivateWindow(servicesettings)</onclick>
+
+					</item>
+					<item id="3">
+						<label>Skin Settings</label>
+						<icon>icon2.png</icon>
+						<thumb>ic_settings_notification.png</thumb>
+						<onclick>ActivateWindow(eventlog)</onclick>
 
 					</item>
 

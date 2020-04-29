@@ -429,7 +429,7 @@
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>stretch</aspectratio>
-				<texture>show_card.png</texture>
+				<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 				
 			</control>
 			<control type="image">
@@ -480,7 +480,7 @@
 					<align>center</align>
 					<aligny>top</aligny>
 					<aspectratio>stretch</aspectratio>
-					<texture>show_card.png</texture>
+					<texture>$INFO[ListItem.Property(Fanart_Image)]</texture>
 				</control>
 
 				<control type="image">
