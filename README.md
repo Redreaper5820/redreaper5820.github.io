@@ -5,5 +5,5 @@ I used Droid TV's skin and updated some aspects so it works on Kodi Leia. It's s
 The skin might end up varying from the actual Android TV skin, but I hope to keep it as close as possible to the Android TV interface. 
 The package name is stored as skin.avi.KoDroidTV sometimes. 
 
-*Do not use the media folder is included in the repo.Use the zipped media folder,or download the release zips they have the required media folders.*
+*_Do not use the media folder is included in the repo.Use the zipped media folder,or download the release zips they have the required media folders._*
 1/5/20 Update : The Skin has reached a beta release. 
