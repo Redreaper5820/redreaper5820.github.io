@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <window>
 	<defaultcontrol always="true">100</defaultcontrol>
+	<visible>Player.Paused + VideoPlayer.IsFullscreen</visible>
 	<include>dialogeffect</include>
 	<coordinates>
 		<system>1</system>
@@ -59,7 +60,7 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdprevtracknf.png</texturefocus>
+				<texturefocus>osdprevtrackf.png</texturefocus>
 				<texturenofocus>osdprevtracknf.png</texturenofocus>
 				<onleft>254</onleft>
 				<onright>201</onright>
@@ -74,8 +75,8 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>OSDRewindFO.png</texturefocus>
-				<texturenofocus>OSDRewindNF.png</texturenofocus>
+				<texturefocus>osdrewindf.png</texturefocus>
+				<texturenofocus>osdrewindnf.png</texturenofocus>
 				<onleft>200</onleft>
 				<onright>202</onright>
 				<onup>1000</onup>
@@ -90,10 +91,10 @@
 				<label></label>
 				<altlabel></altlabel>
 				<font>-</font>
-				<texturefocus>osdpausenf.png</texturefocus>
+				<texturefocus>osdpausef.png</texturefocus>
 				<texturenofocus>osdpausenf.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus>osdplaynf.png</alttexturefocus>
+				<alttexturefocus>osdplayf.png</alttexturefocus>
 				<alttexturenofocus>osdplaynf.png</alttexturenofocus>
 				<onleft>201</onleft>
 				<onright>203</onright>
@@ -108,7 +109,7 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdstopnf.png</texturefocus>
+				<texturefocus>osdstopf.png</texturefocus>
 				<texturenofocus>osdstopnf.png</texturenofocus>
 				<onleft>202</onleft>
 				<onright>204</onright>
@@ -123,7 +124,7 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdforwardnf.png</texturefocus>
+				<texturefocus>osdforwardf.png</texturefocus>
 				<texturenofocus>osdforwardnf.png</texturenofocus>
 				<onleft>203</onleft>
 				<onright>205</onright>
@@ -138,7 +139,7 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdnexttracknf.png</texturefocus>
+				<texturefocus>osdnexttrackf.png</texturefocus>
 				<texturenofocus>osdnexttracknf.png</texturenofocus>
 				<onleft>204</onleft>
 				<onright>255</onright>
@@ -163,7 +164,7 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdchannelupnf.png</texturefocus>
+				<texturefocus>osdchannelupf.png</texturefocus>
 				<texturenofocus>osdchannelupnf.png</texturenofocus>
 				<onleft>353</onleft>
 				<onright>301</onright>
@@ -178,7 +179,7 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdchanneldownnf.png</texturefocus>
+				<texturefocus>osdchanneldownf.png</texturefocus>
 				<texturenofocus>osdchanneldownnf.png</texturenofocus>
 				<onleft>300</onleft>
 				<onright>302</onright>
@@ -193,7 +194,7 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdrewindnf.png</texturefocus>
+				<texturefocus>osdrewindf.png</texturefocus>
 				<texturenofocus>osdrewindnf.png</texturenofocus>
 				<onleft>301</onleft>
 				<onright>303</onright>
@@ -211,10 +212,10 @@
 				<label></label>
 				<altlabel></altlabel>
 				<font>-</font>
-				<texturefocus>osdpausenf.png</texturefocus>
+				<texturefocus>osdpausef.png</texturefocus>
 				<texturenofocus>osdpausenf.png</texturenofocus>
 				<usealttexture>Player.Paused | Player.Forwarding | Player.Rewinding</usealttexture>
-				<alttexturefocus>osdplaynf.png</alttexturefocus>
+				<alttexturefocus>osdplayf.png</alttexturefocus>
 				<alttexturenofocus>osdplaynf.png</alttexturenofocus>
 				<onleft>302</onleft>
 				<onright>304</onright>
@@ -231,7 +232,7 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdstopnf.png</texturefocus>
+				<texturefocus>osdstopf.png</texturefocus>
 				<texturenofocus>osdstopnf.png</texturenofocus>
 				<onleft>303</onleft>
 				<onright>305</onright>
@@ -246,7 +247,7 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdforwardnf.png</texturefocus>
+				<texturefocus>osdforwardf.png</texturefocus>
 				<texturenofocus>osdforwardnf.png</texturenofocus>
 				<onleft>304</onleft>
 				<onright>306</onright>
@@ -263,7 +264,7 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdchannellistnf.png</texturefocus>
+				<texturefocus>osdchannellistf.png</texturefocus>
 				<texturenofocus>osdchannellistnf.png</texturenofocus>
 				<onleft>305</onleft>
 				<onright>307</onright>
@@ -277,9 +278,10 @@
 				<top>0</top>
 				<width>55</width>
 				<height>55</height>
+				<textcolor>matmoviesred</textcolor>
 				<label>$LOCALIZE[19029]$INFO[VideoPlayer.ChannelName, - ]</label>
 				<font>-</font>
-				<texturefocus>osdepgnf</texturefocus>
+				<texturefocus>osdepgf</texturefocus>
 				<texturenofocus>osdepgnf</texturenofocus>
 				<onleft>306</onleft>
 				<onright>354</onright>
@@ -305,8 +307,8 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>OSDStereoscopicFO.png</texturefocus>
-				<texturenofocus>OSDStereoscopicNF.png</texturenofocus>
+				<texturefocus>osdstereoscopicf.png</texturefocus>
+				<texturenofocus>osdstereoscopicnf.png</texturenofocus>
 				<onleft>205</onleft>
 				<onright>250</onright>
 				<onup>501</onup>
@@ -319,7 +321,7 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdsubtitlesnf.png</texturefocus>
+				<texturefocus>osdsubtitlesf.png</texturefocus>
 				<texturenofocus>osdsubtitlesnf.png</texturenofocus>
 				<onleft>255</onleft>
 				<onright>251</onright>
@@ -333,7 +335,7 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdvideonf.png</texturefocus>
+				<texturefocus>osdvideof.png</texturefocus>
 				<texturenofocus>osdvideonf.png</texturenofocus>
 				<onleft>250</onleft>
 				<onright>252</onright>
@@ -348,7 +350,7 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdaudionf.png</texturefocus>
+				<texturefocus>osdaudiof.png</texturefocus>
 				<texturenofocus>osdaudionf.png</texturenofocus>
 				<onleft>251</onleft>
 				<onright>253</onright>
@@ -363,7 +365,7 @@
 				<height>85</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdbookmarksnf.png</texturefocus>
+				<texturefocus>osdbookmarksf.png</texturefocus>
 				<texturenofocus>osdbookmarksnf.png</texturenofocus>
 				<onleft>252</onleft>
 				<onright>254</onright>
@@ -405,8 +407,8 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>OSDStereoscopicFO.png</texturefocus>
-				<texturenofocus>OSDStereoscopicNF.png</texturenofocus>
+				<texturefocus>osdstereoscopicf.png</texturefocus>
+				<texturenofocus>osdstereoscopicnf.png</texturenofocus>
 				<onleft>307</onleft>
 				<onright>350</onright>
 				<onup>551</onup>
@@ -419,7 +421,7 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>osdteletextnf.png</texturefocus>
+				<texturefocus>osdteletextf.png</texturefocus>
 				<texturenofocus>osdteletextnf.png</texturenofocus>
 				<onleft>354</onleft>
 				<onright>351</onright>
@@ -434,8 +436,8 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>OSDVideoFO.png</texturefocus>
-				<texturenofocus>OSDVideoNF.png</texturenofocus>
+				<texturefocus>osdvideof.png</texturefocus>
+				<texturenofocus>osdvideonf.png</texturenofocus>
 				<onleft>350</onleft>
 				<onright>352</onright>
 				<onup>1000</onup>
@@ -449,8 +451,8 @@
 				<height>55</height>
 				<label></label>
 				<font>-</font>
-				<texturefocus>OSDAudioFO.png</texturefocus>
-				<texturenofocus>OSDAudioNF.png</texturenofocus>
+				<texturefocus>osdaudiof.png</texturefocus>
+				<texturenofocus>osdaudionf.png</texturenofocus>
 				<onleft>351</onleft>
 				<onright>353</onright>
 				<onup>1000</onup>
@@ -465,11 +467,11 @@
 				<label></label>
 				<altlabel></altlabel>
 				<font>-</font>
-				<texturefocus>OSDRecordOffFO.png</texturefocus>
-				<texturenofocus>OSDRecordOffNF.png</texturenofocus>
+				<texturefocus>osdecordOfff.png</texturefocus>
+				<texturenofocus>osdrecordOffnf.png</texturenofocus>
 				<usealttexture>Player.Recording</usealttexture>
-				<alttexturefocus>OSDRecordOnFO.png</alttexturefocus>
-				<alttexturenofocus>OSDRecordOnNF.png</alttexturenofocus>
+				<alttexturefocus>osdrecordOnf.png</alttexturefocus>
+				<alttexturenofocus>osdrecordOnnf.png</alttexturenofocus>
 				<onleft>352</onleft>
 				<onright>300</onright>
 				<onup>1000</onup>
@@ -527,7 +529,7 @@
 					<height>15</height>
 					<font>font12</font>
 					<label>24012</label>
-					<textcolor>blue</textcolor>
+					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -644,7 +646,7 @@
 					<height>15</height>
 					<font>font12</font>
 					<label>36501</label>
-					<textcolor>blue</textcolor>
+					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>
@@ -743,7 +745,7 @@
 					<height>15</height>
 					<font>font12</font>
 					<label>36501</label>
-					<textcolor>blue</textcolor>
+					<textcolor>white</textcolor>
 					<align>center</align>
 					<aligny>center</aligny>
 				</control>

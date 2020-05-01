@@ -548,23 +548,23 @@
 	</include>
 
 	<include name="ShowLayouts">
-		<itemlayout height="500" width="426">
+		<itemlayout height="500" width="240">
 			<control type="image">
 				<left>-24</left>
 				<top>-2</top>
-				<width>426</width>
-				<height>401</height>
+				<width>222</width>
+				<height>275</height>
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>stretch</aspectratio>
-				<texture>$INFO[ListItem.Art(landscape)]</texture>
+				<texture>$INFO[ListItem.Art(poster)]</texture>
 
 			</control>
 
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>400</width>
+				<width>224</width>
 				<height>275</height>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -575,7 +575,7 @@
 			<control type="textbox">
 				<left>15</left>
 				<top>290</top>
-				<width>380</width>
+				<width>210</width>
 				<height>70</height>
 				<font>card32</font>
 				<textcolor>white</textcolor>
@@ -587,7 +587,7 @@
 			<control type="textbox">
 				<left>15</left>
 				<top>330</top>
-				<width>380</width>
+				<width>214</width>
 				<height>auto</height>
 				<font>card25</font>
 				<textcolor>FFa6a6a6</textcolor>
@@ -598,7 +598,7 @@
 			</control>
 
 		</itemlayout>
-		<focusedlayout height="500" width="426">
+		<focusedlayout height="500" width="240">
 
 			<control type="group">
 				<animation effect="zoom" end="110,110" center="auto" time="200">Focus</animation>
@@ -606,19 +606,19 @@
 				<control type="image">
 				<left>-24</left>
 				<top>-2</top>
-				<width>426</width>
-				<height>401</height>
+				<width>222</width>
+				<height>275</height>
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>stretch</aspectratio>
-				<texture>$INFO[ListItem.Art(landscape)]</texture>
+				<texture>$INFO[ListItem.Art(poster)]</texture>
 
 			</control>
 
 			<control type="image">
 				<left>0</left>
 				<top>0</top>
-				<width>400</width>
+				<width>222</width>
 				<height>275</height>
 				<align>center</align>
 				<aligny>top</aligny>
@@ -629,7 +629,7 @@
 			<control type="textbox">
 				<left>15</left>
 				<top>290</top>
-				<width>380</width>
+				<width>210</width>
 				<height>70</height>
 				<font>card32</font>
 				<textcolor>white</textcolor>
@@ -641,7 +641,7 @@
 			<control type="textbox">
 				<left>15</left>
 				<top>330</top>
-				<width>380</width>
+				<width>210</width>
 				<height>auto</height>
 				<font>card25</font>
 				<textcolor>FFa6a6a6</textcolor>
@@ -659,12 +659,12 @@
 	</include>
 
 <include name="FlexLayout">
-		<itemlayout height="353" width="416">
+		<itemlayout height="353" width="250">
 			<control type="image">
-				<left>-20</left>
+				<left>100</left>
 				<top>6</top>
-				<width>400</width>
-				<height>275</height>
+				<width>224</width>
+				<height>353</height>
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio>stretch</aspectratio>
@@ -674,70 +674,70 @@
 
 			</control>
 			<control type="image">
-				<left>0</left>
+				<left>120</left>
 				<top>0</top>
-				<width>400</width>
+				<width>222</width>
 				<height>275</height>
 				<align>center</align>
 				<aligny>top</aligny>
 				<aspectratio aligny="top">scale</aspectratio>
-				<texture>$INFO[ListItem.Art(landscape)]</texture>
+				<texture>$INFO[ListItem.Art(poster)]</texture>
 			</control>
 			<control type="image">
-				<left>0</left>
+				<left>120</left>
 				<top>255</top>
-				<width>400</width>
+				<width>222</width>
 				<height>78</height>
-				<align>center</align>
+				<align>left</align>
 				<aligny>top</aligny>
 				<aspectratio aligny="bottom">scale</aspectratio>
 				<texture diffuse="Mask_widecard.png">card_box.png</texture>
 			</control>
 
 			<control type="label">
-				<left>10</left>
+				<left>130</left>
 				<top>260</top>
-				<width>380</width>
+				<width>210</width>
 				<height>auto</height>
 				<font>card25</font>
 				<textcolor>white</textcolor>
-				<align>Left</align>
+				<align>left</align>
 				<aligny>Top</aligny>
 				<wrapmultiline>true</wrapmultiline>
 				<label>$INFO[ListItem.Label]</label>
 			</control>
 
 		</itemlayout>
-		<focusedlayout height="353" width="416">
+		<focusedlayout height="353" width="250">
 
 			<control type="group">
 				<animation effect="zoom" end="110,110" center="auto" time="200">Focus</animation>
 				<animation effect="zoom" end="100,100" center="auto" time="200">Unfocus</animation>
 				<control type="image">
-					<left>0</left>
+					<left>120</left>
 					<top>6</top>
-					<width>400</width>
-					<height>300</height>
+					<width>222</width>
+					<height>275</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<aspectratio>stretch</aspectratio>
-					<texture>$INFO[ListItem.Art(landscape)]</texture>
+					<texture>$INFO[ListItem.Art(poster)]</texture>
 				</control>
 
 				<control type="image">
-					<left>0</left>
+					<left>120</left>
 					<top>0</top>
-					<width>400</width>
+					<width>222</width>
 					<height>275</height>
 					<align>center</align>
 					<aligny>top</aligny>
 					<aspectratio aligny="top">scale</aspectratio>
-					<texture diffuse="Mask_widetest.png"  background="true">$INFO[ListItem.Property(Fanart_Image)]	</texture>
+					<texture diffuse="Mask_widetest.png"  background="true">$INFO[ListItem.Property(Art(poster))]	</texture>
 				</control>
 				<control type="image">
-					<left>0</left>
+					<left>120</left>
 					<top>255</top>
-					<width>400</width>
+					<width>222</width>
 					<height>78</height>
 					<align>center</align>
 					<aligny>top</aligny>
@@ -746,25 +746,25 @@
 				</control>
 
 				<control type="label">
-					<left>10</left>
+					<left>130</left>
 					<top>260</top>
-					<width>380</width>
+					<width>210</width>
 					<height>auto</height>
 					<font>card25</font>
-					<textcolor>white</textcolor>
-					<align>Left</align>
+					<textcolor>gmatblue</textcolor>
+					<align>left</align>
 					<aligny>Top</aligny>
 					<wrapmultiline>true</wrapmultiline>
 					<label>$INFO[ListItem.Title]</label>
 				</control>
 
 				<control type="label">
-					<left>10</left>
+					<left>130</left>
 					<top>290</top>
-					<width>380</width>
+					<width>214</width>
 					<height>auto</height>
 					<font>card25</font>
-					<textcolor>white</textcolor>
+					<textcolor>Material_Teal</textcolor>
 					<align>Left</align>
 					<aligny>Top</aligny>
 					<wrapmultiline>true</wrapmultiline>
@@ -1164,7 +1164,7 @@
 					<top>80</top>
 					<width>300</width>
 					<height>300</height>
-					<texture>$INFO[Listitem.Art(Fanarts)]</texture>
+					<texture>$INFO[ListItem.Property(Art(poster)))]</texture>
 					<visible>true</visible>
 				</control>
 

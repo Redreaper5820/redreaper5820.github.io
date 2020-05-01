@@ -22,8 +22,8 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<width>2560</width>
+			<height>1600</height>
 			<aspectratio>scale</aspectratio>
 			<visible>Control.Hasfocus(9007)</visible>
 			<texture background="true">$INFO[Container(9007).ListItem(0).Art(fanart)]</texture>
@@ -34,8 +34,8 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<width>2560</width>
+			<height>1600</height>
 			<aspectratio>scale</aspectratio>
 			<visible>Control.Hasfocus(9008)</visible>
 			<texture background="true">$INFO[Container(9008).ListItem(0).Art(fanart)]</texture>
@@ -46,8 +46,8 @@
 		<control type="image">
 			<left>0</left>
 			<top>0</top>
-			<width>1920</width>
-			<height>1080</height>
+			<width>2560</width>
+			<height>1600</height>
 			<aspectratio>scale</aspectratio>
 			<visible>Control.Hasfocus(9009)</visible>
 			<texture background="true">$INFO[Container(9009).ListItem(0).Art(fanart)]</texture>
@@ -58,9 +58,9 @@
 		
 		<control type="image">
 			<left>0</left>
-			<top>-100</top>
-			<width>2200</width>
-			<height>1280</height>
+			<top>0</top>
+			<width>2560</width>
+			<height>1600</height>
 			<texture>homenowplayingback.png</texture>
 			<aspectratio>stretch</aspectratio>
 			<animation effect="slide" end="0,0" time="100" condition="Control.HasFocus(666)">conditional</animation>
@@ -148,7 +148,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>searchtitle</font>
-					<textcolor>matgrey</textcolor>
+					<textcolor>grey</textcolor>
 					<visible>!control.hasfocus(666)</visible>
 
 					<label>Search movies, TV, and more</label>
@@ -163,7 +163,7 @@
 					<align>left</align>
 					<aligny>center</aligny>
 					<font>searchtitle_focused</font>
-					<textcolor>white</textcolor>
+					<textcolor>mediumgrey</textcolor>
 					<visible>control.hasfocus(666)</visible>
 					<label>Click to search</label>
 					<animation effect="fade" time="200">VisibleChange</animation>
@@ -178,7 +178,7 @@
 					<align>right</align>
 					<aligny>center</aligny>
 					<font>clock</font>
-					<textcolor>white</textcolor>
+					<textcolor>darkgrey</textcolor>
 					<label>$INFO[System.Time(hh:mm)]</label>
 					<animation effect="slide" start="0,0" end="-40,0" time="75" condition="Window.IsVisible(Mutebug)">conditional</animation>
 				</control>
@@ -186,6 +186,7 @@
 
 			<!-- Recommended Label -->
 			<control type="label" id="991">
+				<textcolor>white</textcolor>
 				<label>Recommended For You</label>
 				<visible>Control.IsVisible(9001)</visible>
 				<include>CardLabel</include>
@@ -206,6 +207,7 @@
 			</control>
 			
 			<control type="label" id="990">
+				
 				<label>Apps</label>
 				<visible>Control.HasFocus(9000)</visible>
 				<include>CardLabel</include>
@@ -242,6 +244,32 @@
 						<thumb>AppCard_Orange.png</thumb>
 						<visible>true</visible>
 					</item>
+					<item id="1">
+						<label>31957</label>
+						<onclick condition="!System.Platform.Android">ActivateWindow(Games,return)</onclick>
+						<onclick condition="System.Platform.Android">ActivateWindow(Games)</onclick>
+						<icon>-</icon>
+						<thumb>AppCard_Green.png</thumb>
+						<property name="Color">matplaygreen</property>
+						<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
+					</item>
+					<item id="4">
+						<label>31951</label>
+						<onclick>ActivateWindow(Pictures)</onclick>
+						<icon>-</icon>
+						<thumb>AppCard_pictures.png</thumb>
+						<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
+					</item>
+					<item id="7">
+						<label>31950</label>
+						<onclick>ActivateWindow(Weather)</onclick>
+						<icon>-</icon>
+						<thumb>AppCard_weather.png</thumb>
+<property name="Color">yahoopurple</property>
+		
+
+						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
+					</item>
 					<item id="3">
 						<label>31956</label>
 						<onclick>RunScript(script.leanbackhelper)</onclick>
@@ -258,32 +286,6 @@
 						<icon>-</icon>
 						<thumb>AppCard_Netflix.png</thumb>
 						<visible>System.HasAddon(plugin.video.exodusredux)</visible>
-					</item>
-					<item id="1">
-						<label>31957</label>
-						<onclick condition="!System.Platform.Android">ActivateWindow(Games,return)</onclick>
-						<onclick condition="System.Platform.Android">ActivateWindow(Games)</onclick>
-						<icon>-</icon>
-						<thumb>AppCard_Green.png</thumb>
-						<property name="Color">matplaygreen</property>
-						<visible>!Skin.HasSetting(HomeMenuNoProgramsButton)</visible>
-					</item>
-					<item id="7">
-						<label>31950</label>
-						<onclick>ActivateWindow(Weather)</onclick>
-						<icon>-</icon>
-						<thumb>AppCard_weather.png</thumb>
-<property name="Color">yahoopurple</property>
-		
-
-						<visible>!Skin.HasSetting(HomeMenuNoWeatherButton) + !IsEmpty(Weather.Plugin)</visible>
-					</item>
-					<item id="4">
-						<label>31951</label>
-						<onclick>ActivateWindow(Pictures)</onclick>
-						<icon>-</icon>
-						<thumb>AppCard_pictures.png</thumb>
-						<visible>!Skin.HasSetting(HomeMenuNoPicturesButton)</visible>
 					</item>
 					<item id="13">
 						<label>31960</label>
@@ -433,6 +435,26 @@
 						<icon>icon2.png</icon>
 						<thumb>ic_settings_notification.png</thumb>
 						<onclick>ActivateWindow(eventlog)</onclick>
+<onclick>ReloadSkin()</onclick>
+
+
+					</item>
+					<item id="4">
+						<label>Refresh</label>
+						<icon>icon2.png</icon>
+						<thumb>ic_settings_refresh.png</thumb>
+						<onclick>ReloadSkin()</onclick>
+
+
+
+					</item>>
+					<item id="5">
+						<label>exit</label>
+						<icon>icon2.png</icon>
+						<thumb>ic_settings_power.png</thumb>
+						<onclick>Quit</onclick>
+
+
 
 					</item>
 

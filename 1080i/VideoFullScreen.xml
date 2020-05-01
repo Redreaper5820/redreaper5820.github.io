@@ -68,10 +68,10 @@
 			<!-- CARATULA TV-->
 			<control type="image" id="1">
 				<description>cover image</description>
-				<left>6</left>
+				<left>120</left>
 				<top>760r</top>
-				<width>420</width>
-				<height>680</height>
+				<width>210</width>
+				<height>340</height>
 				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
@@ -81,10 +81,10 @@
 			<!-- CARATULA PELICULA -->
 			<control type="image" id="1">
 				<description>Movie cover image</description>
-				<left>6</left>
-				<top>590r</top>
-				<width>420</width>
-				<height>580</height>
+				<left>200</left>
+				<top>300r</top>
+				<width>210</width>
+				<height>290</height>
 				<texture fallback="DefaultVideoCover.png">$INFO[Player.Art(thumb)]</texture>
 				<aspectratio aligny="bottom">keep</aspectratio>
 				<bordertexture border="8">ThumbShadow.png</bordertexture>
@@ -97,7 +97,7 @@
 				<top>265r</top><!-- REPRODUCIENDO -->
 				<control type="label" id="1">
 					<description>Heading label</description>
-					<left>0</left>
+					<left>-220</left>
 					<top>-35</top>
 					<width>980</width>
 					<height>0</height>
@@ -105,7 +105,7 @@
 					<aligny>center</aligny>
 					<font>font48</font>
 					<label>$LOCALIZE[31040]</label>
-					<textcolor>white</textcolor>
+					<textcolor>grey</textcolor>
 					<shadowcolor>black</shadowcolor>
 					<visible>![VideoPlayer.Content(LiveTV) + Player.Recording]</visible>
 					<animation effect="slide" start="0,0" end="0,25" time="0" condition="!VideoPlayer.Content(Movies) + !VideoPlayer.Content(Episodes) + !VideoPlayer.Content(MusicVideos) + !VideoPlayer.Content(LiveTV)">conditional</animation>
@@ -186,20 +186,20 @@
 				</control>
 				<!-- control tamaño iconos grises -->
 				<control type="grouplist" id="1">
-					<left>30</left>
+					<left>3</left>
 					<top>57</top>
-					<width>980</width>
+					<width>900</width>
 					<height>90</height>
-					<itemgap>5</itemgap>
+					<itemgap>25</itemgap>
 					<orientation>horizontal</orientation>
 					<control type="label" id="1">
-						<width min="10" max="520">auto</width>
-						<height>40</height>
-						<font>font48</font>
+						<width min="200" max="820">auto</width>
+						<height>50</height>
+						<font>Roboto-Light</font>
 						<align>left</align>
 						<aligny>center</aligny>
-						<label>$INFO[Player.Title]</label>
-						<textcolor>orange</textcolor>
+						<label>[B][I]$INFO[Player.Title][/B][/I]</label>
+						<textcolor>gmatblue</textcolor>
 						<scroll>true</scroll>
 					</control>
 					<control type="image" id="1">
@@ -237,11 +237,12 @@
 						</control>
 						<control type="label" id="1">
 							<left>45</left>
-							<top>-3</top>
+							<top>0</top>
 							<width>75</width>
 							<height>50</height>
 							<font>font13</font>
-							<align>left</align>
+							<align>left</align>
+							<aligny>center</aligny>
 							<label>$INFO[VideoPlayer.AudioLanguage]</label>
 							<textcolor>grey</textcolor>
 						</control>
@@ -259,11 +260,12 @@
 						</control>
 						<control type="label" id="1">
 							<left>43</left>
-							<top>-3</top>
+							<top>0</top>
 							<width>85</width>
 							<height>50</height>
 							<font>font13</font>
-							<align>left</align>
+							<align>left</align>
+							<aligny>center</aligny>
 							<label>$INFO[VideoPlayer.SubtitlesLanguage]</label>
 							<textcolor>grey</textcolor>
 						</control>

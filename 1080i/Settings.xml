@@ -54,7 +54,7 @@
 						<label>480</label>
 						<label2>31400</label2>
 						<onclick>ActivateWindow(AppearanceSettings)</onclick>
-						<icon>settings/ic_settings_display.png</icon>
+						<icon>settings/ic_settings_appearance.png</icon>
 					</item>
 
 					<item id="2">
@@ -91,25 +91,25 @@
 						<label>Player</label>
 						<label2>31401</label2>
 						<onclick>ActivateWindow(playersettings)</onclick>
-						<icon>settings/ic_settings_video.png</icon>
+						<icon>ic_settings_Player.png</icon>
 					</item>
 					<item id="2">
 						<label>Media</label>
 						<label2>31409</label2>
 						<onclick>ActivateWindow(mediasettings)</onclick>
-						<icon>settings/ic_settings_tv.png</icon>
+						<icon>settings/ic_settings_video.png</icon>
 					</item>
 					<item id="3">
 						<label>Game</label>
 						<label2>31402</label2>
 						<onclick>ActivateWindow(gamesettings)</onclick>
-						<icon>settings/ic_settings_music.png</icon>
+						<icon>ic_settings_game.png</icon>
 					</item>
 					<item id="4">
 						<label>PVR</label>
 						<label2>31403</label2>
 						<onclick>ActivateWindow(pvrsettings)</onclick>
-						<icon>settings/ic_settings_pictures.png</icon>
+						<icon>ic_settings_pvr.png</icon>
 					</item>
 					<item id="5">
 						<label>8</label>
