@@ -20,12 +20,26 @@
 			<include>Window_OpenClose_Animation</include>
 			<include>VisibleFadeEffect</include>
 			<control type="image">
-				<left>75</left>
-				<top>60</top>
-				<width>1130</width>
-				<height>600</height>
-				<texture border="15">ContentPanel.png</texture>
+				<left>0</left>
+				<top>0</top>
+				<width>1950</width>
+				<height>1080</height>
+				<texture border="15">notificationcenter.png</texture>
 			</control>
+
+				<control type="label">
+					<description>time label</description>
+					<top>30</top>
+					<right>0</right>
+					<width>350</width>
+					<height>30</height>
+					<align>right</align>
+					<aligny>center</aligny>
+					<font>clock</font>
+					<textcolor>darkgrey</textcolor>
+					<label>$INFO[System.Time(hh:mm xx)]</label>
+					<animation effect="slide" start="0,0" end="-40,0" time="75" condition="Window.IsVisible(Mutebug)">conditional</animation>
+				</control>
 			<control type="image">
 				<left>75</left>
 				<top>652</top>

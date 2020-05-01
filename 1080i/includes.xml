@@ -1627,49 +1627,6 @@
 		<texturenofocus border="5">button-nofocus.png</texturenofocus>
 		<pulseonselect>false</pulseonselect>
 	</include>
-	<include name="SideBladeLeft">
-		<animation effect="slide" start="0,0" end="250,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001) | Control.HasFocus(8999)">Conditional</animation>
-		<animation effect="slide" start="0,0" end="-300,0" time="300" tween="quadratic" easing="out" condition="ControlGroup(9000).HasFocus | Control.HasFocus(9001)">WindowClose</animation>
-		<animation effect="slide" start="0,0" end="-50,0" time="225" tween="quadratic" easing="out" condition="![ControlGroup(9000).HasFocus | Control.HasFocus(9001)]">WindowClose</animation>
-		<animation effect="slide" start="-50,0" end="0,0" time="225" tween="quadratic" easing="out">WindowOpen</animation>
-		<control type="button" id="8999">
-			<description>Fake button for mouse control</description>
-			<left>0</left>
-			<top>0</top>
-			<width>250</width>
-			<height>1080</height>
-			<label>-</label>
-			<font>-</font>
-			<texturenofocus>-</texturenofocus>
-			<texturefocus>-</texturefocus>
-			<visible>true</visible>
-		</control>
-		<control type="button" id="9001">
-			<left>250</left>
-			<top>260</top>
-			<width>42</width>
-			<height>128</height>
-			<font>-</font>
-			<texturefocus>HasSub.png</texturefocus>
-			<texturenofocus>HasSub.png</texturenofocus>
-		</control>
-		<control type="image">
-			<left>0</left>
-			<top>0</top>
-			<width>260</width>
-			<height>1080</height>
-			<texture border="0,0,10,0">MediaBladeSub.png</texture>
-		</control>
-		<control type="image">
-			<description>LOGO</description>
-			<left>15</left>
-			<top>0</top>
-			<width>220</width>
-			<height>80</height>
-			<aspectratio>keep</aspectratio>
-			<texture>Confluence_Logo.png</texture>
-		</control>
-	</include>
 	<include name="HiddenControl">
 		<left>-10</left>
 		<top>-10</top>
@@ -2407,18 +2364,18 @@
 		<control type="group">
 			<control type="label">
 				<description>time label</description>
-				<right>100</right>
+				<right>70</right>
 				<top>100</top>
-				<width>200</width>
+				<width>350</width>
 				<height>30</height>
 				<align>right</align>
 				<aligny>center</aligny>
 				<font>clock</font>
 				<textcolor>white</textcolor>
-				<label>$INFO[System.Time]</label>
+				<label>$INFO[System.Time(hh:mm xx)]</label>
 				<animation effect="slide" start="0,0" end="-40,0" time="75" condition="Window.IsVisible(Mutebug)">conditional</animation>
 			</control>
-		</control>
+					</control>
 	</include>
 	<include name="HomeAddonsCommonLayout">
 		<include>Window_OpenClose_Animation</include>
