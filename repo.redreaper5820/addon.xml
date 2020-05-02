@@ -2,7 +2,7 @@
 <addon id="repo.redreaper5820" name="RedReaper" version="v1.0" provider-name="Avi">
     <extension point="xbmc.addon.repository" name="Example Repository">
         <dir>
-            <info compressed="false">https://raw.githubusercontent.com/Redreaper5820/repo/master/zips/addons.xml</info>
+            <info compressed="false">https://raw.githubusercontent.com/Redreaper5820/redreaper/master/zips/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Redreaper5820/repo/master/zips/addons.xml.md5</checksum>
             <datadir zip="true">https://raw.githubusercontent.com/Redreaper5820/repo/master/</datadir>
         </dir>
