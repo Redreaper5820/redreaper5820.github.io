@@ -4,7 +4,7 @@
         <dir>
             <info compressed="false">https://raw.githubusercontent.com/Redreaper5820/redreaper5820.github.io/master/addons.xml</info>
             <checksum>https://raw.githubusercontent.com/Redreaper5820/redreaper5820.github.io/master/addon.xml.md5</checksum>
-            <datadir zip="true">https:https://redreaper5820.github.io/zips/</datadir>
+            <datadir zip="true">https://raw.githubusercontent.com/Redreaper5820/redreaper5820.github.io/master/zips/</datadir>
         </dir>
     </extension>
     <extension point="xbmc.addon.metadata">
