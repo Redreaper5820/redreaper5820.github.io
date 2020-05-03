@@ -2,6 +2,7 @@
 <includes>
 	<include file="defaults.xml" />
 	<include file="Animations.xml" />
+	<include file="KPR_view.xml"/>
 	<include file="IncludesDefaultSkinSettings.xml" />
 	<include file="ViewsVideoLibrary.xml" />
 	<include file="ViewsMusicLibrary.xml" />
@@ -44,6 +45,83 @@
 		<value condition="![Window.IsVisible(FullscreenVideo) | Window.IsVisible(Visualisation)]">DialogBack.png</value>
 		<value>DialogBack2.png</value>
 	</variable>
+	<variable name="couleur_dominante">																													<description>couleur de selection dominante</description>
+		<value condition="!string.isempty(skin.string(couleur_dominante))">ff$INFO[skin.string(couleur_dominante)]</value>
+		<value>ffe5a00d</value>
+	</variable>
+
+	<variable name="couleur_OSD">																												<description>couleur OSD (opacite + base)</description>
+		<value>$INFO[skin.string(opacite_OSD)]$INFO[skin.string(couleur_base_OSD)]</value>		
+	</variable>		
+	
+	<variable name="opacite_OSD">																												<description>opacite OSD</description>
+		<value condition="string.isequal(skin.string(opacite_OSD),00ffffff)">0 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),0d)">5 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),1a)">10 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),26)">15 %</value>				
+		<value condition="string.isequal(skin.string(opacite_OSD),33)">20 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),40)">25 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),4d)">30 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),59)">35 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),66)">40 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),73)">45 %</value>				
+		<value condition="string.isequal(skin.string(opacite_OSD),80)">50 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),8c)">55 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),99)">60 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),a6)">65 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),b3)">70 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),bf)">75 %</value>
+		<value condition="string.isequal(skin.string(opacite_OSD),cc)">80 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),d9)">85 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),e6)">90 %</value>		
+		<value condition="string.isequal(skin.string(opacite_OSD),f2)">95 %</value>	
+	</variable>		
+	
+	<variable name="couleur_encours">																											<description>couleur de fond des indications encours</description>
+		<value condition="!string.isempty(skin.string(couleur_encours))">ff$INFO[skin.string(couleur_encours)]</value>
+		<value>ffc0392b</value>
+	</variable>
+	
+	<variable name="gris">	
+		<value>ff201f20</value>
+	</variable>
+	
+	<variable name="gris_40">	
+		<value>40201f20</value>
+	</variable>
+
+	<variable name="masque">
+		<value>$INFO[skin.string(opacite_arriere_plan)]ffffff</value>
+	</variable>
+	
+	<variable name="slider_opacite_masque">
+		<value condition="control.hasfocus(500)">$VAR[couleur_dominante]</value>
+		<value condition="!control.isenabled(1007)">80201f20</value>
+		<value>a6201f20</value>
+	</variable>
+	
+	<variable name="opacite_masque">
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),cc)">80%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),cf)">81%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),d1)">82%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),d4)">83%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),d6)">84%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),d9)">85%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),db)">86%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),de)">87%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),e0)">88%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),e3)">89%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),e6)">90%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),e8)">91%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),eb)">92%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),ed)">93%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),f0)">94%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),f2)">95%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),f5)">96%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),f7)">97%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),fa)">98%</value>
+		<value condition="string.isequal(skin.string(opacite_arriere_plan),fc)">99%</value>	
+	</variable>
 
 
 	<variable name="typehackflagging">
@@ -52,6 +130,129 @@
 		<value condition="substring(ListItem.FilenameAndPath,dvd)">dvd</value>
 		<value condition="[substring(ListItem.FilenameAndPath,pdtv) | substring(ListItem.FilenameAndPath,hdtv) | substring(ListItem.FilenameAndPath,dsr)]">TV</value>
 		<value condition="substring(ListItem.FilenameAndPath,vhs)">vhs</value>
+	</variable>
+	<variable name="icone_status">
+		<value condition="!String.IsEmpty(ListItem.AddonBroken)">icones/inactif.png</value>
+		<value condition="ListItem.Property(addon.orphaned)">icones/orphelin.png</value>
+		<value condition="ListItem.Property(addon.downloading)">icones/install.png</value>
+		<value condition="ListItem.Property(addon.isinstalled) + !ListItem.Property(addon.isenabled) + Window.IsActive(addonbrowser)">icones/inactif.png</value>
+		<value condition="ListItem.Property(addon.hasupdate)">icones/update.png</value>
+		<value condition="!$EXP[est_une_saga] + integer.isequal(listitem.playcount,0) + integer.isequal(listitem.percentplayed,0)">icones/item.png</value>
+		<value condition="!integer.isequal(listitem.percentplayed,0) | [$EXP[est_une_serie] + !integer.isequal(ListItem.Property(WatchedEpisodes),0)] | [$EXP[est_une_saison] + !integer.isequal(ListItem.Property(WatchedEpisodes),0)]">icones/resume.png</value>
+		<value condition="!integer.isequal(listitem.playcount,0) + integer.isequal(listitem.percentplayed,0)">icones/vu2.png</value>
+		<value condition="$EXP[est_une_saga]">icones/saga.png</value>		
+		<value>icones/item.png</value>
+	</variable>
+	<variable name="vues_titre">
+		<value condition="!string.isempty(listitem.title)">$INFO[listitem.title]</value>
+		<value>$INFO[listitem.label]</value>			
+	</variable>
+	<variable name="vues_titre_bis">
+		<value condition="!string.isempty(listitem.originaltitle)"> ($INFO[listitem.originaltitle])</value>					
+	</variable>
+	<variable name="vues_infos_1">
+		<value condition="!string.isempty(listitem.title)">  $INFO[listitem.title]</value>
+		<value>  $INFO[listitem.label]</value>			
+	</variable>
+	<variable name="vues_infos_2">
+		<value condition="[window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)] + !string.isempty(listitem.FolderName)">$INFO[listitem.FolderName]</value>		
+		<value condition="[$EXP[est_un_film] | $EXP[est_une_saga] | $EXP[est_une_serie] | $EXP[est_une_saison] | $EXP[est_un_episode]] + !string.isempty(listitem.year)">$INFO[listitem.year]</value>
+		<value condition="$EXP[est_un_artiste] + !string.isempty(listitem.Property(Artist_Gender))">$INFO[listitem.Property(Artist_Gender)]</value>
+		<value condition="$EXP[est_un_album] + !string.isempty(listitem.year)">$INFO[listitem.year]</value>
+		<value condition="$EXP[est_une_chanson] + !string.isempty(listitem.year)">$INFO[listitem.year]</value>
+		<value condition="$EXP[est_un_addon] + !string.isempty(listitem.AddonType)">$INFO[listitem.AddonType]</value>
+	</variable>
+	<variable name="vues_infos_separation_2">
+		<value condition="!string.isempty(control.getlabel(772)) + [!string.isempty(control.getlabel(773)) | !string.isempty(control.getlabel(774)) | !string.isempty(control.getlabel(775))]"> │ </value>		
+	</variable>
+	<variable name="vues_infos_3">
+		<value condition="[window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)] + !string.isempty(listitem.ChannelName)">$INFO[listitem.ChannelName]</value>
+		<value condition="[$EXP[est_un_film] | $EXP[est_une_saga] | $EXP[est_une_serie] | $EXP[est_une_saison] | $EXP[est_un_episode]] + !string.isempty(listitem.premiered)">$INFO[listitem.premiered]</value>		
+		<value condition="$EXP[est_un_artiste] + !string.isempty(listitem.Property(Artist_Mood))">$INFO[listitem.Property(Artist_Mood)]</value>
+		<value condition="$EXP[est_un_album] + !string.isempty(listitem.Property(Album_Label))">$INFO[listitem.Property(Album_Label)]</value>
+		<value condition="$EXP[est_une_chanson] + !string.isempty(listitem.Album)">$INFO[listitem.Album]</value>
+		<value condition="$EXP[est_un_addon] + !string.isempty(listitem.AddonVersion)">$LOCALIZE[19114] $INFO[listitem.AddonVersion]</value>
+	</variable>
+	<variable name="legende_infos">
+		<value condition="control.hasfocus(18)">$LOCALIZE[20153]</value>
+		<value condition="control.hasfocus(809)">$LOCALIZE[31357]</value>
+		<value condition="[control.hasfocus(15) | control.hasfocus(17)] + window.isvisible(movieinformation)">$LOCALIZE[31245]</value>
+		<value condition="control.hasfocus(8) + window.isvisible(MyPVRRecordings.xml)">$LOCALIZE[31312]</value>
+		<value condition="control.hasfocus(19) + window.isvisible(movieinformation)">$LOCALIZE[31246]</value>
+		<value condition="control.hasfocus(11) + window.isvisible(movieinformation)">$LOCALIZE[31247]</value>
+		<value condition="control.hasfocus(6) + [window.isvisible(movieinformation) | window.isvisible(dialogmusicinfo.xml)]">$LOCALIZE[31248]</value>
+		<value condition="control.hasfocus(10) + [window.isvisible(movieinformation) | window.isvisible(dialogmusicinfo.xml)]">$LOCALIZE[31249]</value>
+		<value condition="control.hasfocus(7) + [window.isvisible(movieinformation) | window.isvisible(dialogmusicinfo.xml)]">$LOCALIZE[31250]</value>
+		<value condition="control.hasfocus(12) + window.isvisible(dialogmusicinfo.xml)">$LOCALIZE[31296]</value>
+		<value condition="control.hasfocus(120) + window.isvisible(dialogmusicinfo.xml)">$LOCALIZE[31295]</value>
+		<value condition="control.hasfocus(800) + window.isvisible(dialogmusicinfo.xml) + !string.isempty(container(50).listitem.duration)">$LOCALIZE[20398]</value>
+		<value condition="control.hasfocus(800) + window.isvisible(dialogmusicinfo.xml) + string.isempty(container(50).listitem.duration) + !string.isEmpty(container(50).listItem.DBID)">$LOCALIZE[31297]</value>
+		<value condition="control.hasfocus(800) + window.isvisible(dialogmusicinfo.xml) + string.isempty(container(50).listitem.duration) + string.isEmpty(container(50).listItem.DBID)">$LOCALIZE[31298]</value>
+		<value condition="control.hasfocus(14) + [window.isvisible(movieinformation) | window.isvisible(dialogmusicinfo.xml)]">$LOCALIZE[31251]</value>
+		<value condition="control.hasfocus(50) + window.isvisible(movieinformation)">$INFO[container(50).listitem.label] $LOCALIZE[31315] $INFO[container(50).listitem.label2]</value>
+		<value condition="control.hasfocus(5) + window.isvisible(pvrguideinfo)">$LOCALIZE[31256]</value>
+		<value condition="control.hasfocus(6) + window.isvisible(pvrguideinfo)">$LOCALIZE[31257]</value>
+		<value condition="control.hasfocus(9) + window.isvisible(pvrguideinfo)">$LOCALIZE[31258]</value>
+		<value condition="control.hasfocus(4) + window.isvisible(pvrguideinfo)">$LOCALIZE[31259]</value>
+		<value condition="control.hasfocus(3) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml) | window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)]">$LOCALIZE[39010]</value>
+		<value condition="control.hasfocus(4) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml) | window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)]">$LOCALIZE[31278]</value>
+		<value condition="control.hasfocus(801) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml) | window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)]">$LOCALIZE[31279]</value>
+		<value condition="control.hasfocus(9) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml) | window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)]">$LOCALIZE[31280]</value>
+		<value condition="control.hasfocus(15) + window.isvisible(MyPVRRecordings.xml)">$LOCALIZE[31313]</value>		
+		<value condition="control.hasfocus(5) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml)]">$LOCALIZE[31281]</value>
+		<value condition="control.hasfocus(19) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml) | window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)]">$LOCALIZE[31283]</value>
+		<value condition="control.hasfocus(8) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml) | window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)]">$LOCALIZE[31284]</value>
+		<value condition="control.hasfocus(803) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml) | window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)]">$LOCALIZE[31282]</value>
+		<value condition="control.hasfocus(802) + [window.isvisible(myvideonav.xml) | window.isvisible(mymusicnav.xml) | window.isvisible(addonbrowser.xml) | window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)]">$LOCALIZE[457]</value>		
+		<value condition="control.hasfocus(106) + window.isvisible(addoninformation) + !String.StartsWith(Control.GetLabel(6),$LOCALIZE[24038])">$LOCALIZE[31302]</value>
+		<value condition="control.hasfocus(106) + window.isvisible(addoninformation) + String.StartsWith(Control.GetLabel(6),$LOCALIZE[24038])">$LOCALIZE[31303]</value>
+		<value condition="control.hasfocus(107) + window.isvisible(addoninformation) + !String.StartsWith(Control.GetLabel(7),$LOCALIZE[24022])">$LOCALIZE[31304]</value>
+		<value condition="control.hasfocus(107) + window.isvisible(addoninformation) + String.StartsWith(Control.GetLabel(7),$LOCALIZE[24022])">$LOCALIZE[31305]</value>
+		<value condition="control.hasfocus(108) + window.isvisible(addoninformation)">$LOCALIZE[31306]</value>
+		<value condition="control.hasfocus(109) + window.isvisible(addoninformation)">$LOCALIZE[31307]</value>
+		<value condition="control.hasfocus(110) + window.isvisible(addoninformation)">$LOCALIZE[31308]</value>
+		<value condition="control.hasfocus(112) + window.isvisible(addoninformation)">$LOCALIZE[31309]</value>
+		<value condition="control.hasfocus(50) + window.isvisible(addoninformation)">$LOCALIZE[31316]</value>
+		<value condition="control.hasfocus(13) + window.isvisible(addoninformation) + !String.contains(Control.GetLabel(13),*)">$LOCALIZE[31310]</value>		
+		<value condition="control.hasfocus(13) + window.isvisible(addoninformation) + String.contains(Control.GetLabel(13),*)">$LOCALIZE[31311]</value>		
+		<value></value>
+	</variable>
+<variable name="vues_infos_resume">
+		<value condition="!string.isempty(listitem.plot)">$INFO[listitem.plot]</value>
+		<value condition="!string.isempty(listitem.AddonDescription)">$INFO[ListItem.AddonDescription]</value>
+		<value condition="$EXP[est_un_artiste] + !string.isempty(ListItem.Property(Artist_Description))">$INFO[ListItem.Property(Artist_Description)]</value>
+		<value condition="$EXP[est_un_album] + !string.isempty(ListItem.Property(Album_Description))">$INFO[ListItem.Property(Album_Description)]</value>
+	</variable>
+	<variable name="vues_infos_separation_3">
+		<value condition="!string.isempty(control.getlabel(773)) + [!string.isempty(control.getlabel(774)) | !string.isempty(control.getlabel(775))]"> │ </value>		
+	</variable>	
+	<variable name="vues_infos_4">
+		<value condition="[window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)] + !string.isempty(listitem.label2)">$INFO[listitem.label2]</value>
+		<value condition="$EXP[est_un_film] + !string.isempty(listitem.duration) + !string.isequal(listitem.duration(hh:mm),00:00) + !string.isequal(listitem.duration(hh:mm),00:01) + !string.isequal(listitem.duration(hh:mm),00:02)">$INFO[listitem.duration(hh:mm)]</value>
+		<value condition="$EXP[est_un_episode] + !string.isempty(listitem.season)">$LOCALIZE[31205] $INFO[listitem.season] │ $LOCALIZE[31204] $INFO[listitem.Episode]</value>
+		<value condition="$EXP[est_une_serie] + !string.isempty(listitem.season)">$INFO[listitem.season] $LOCALIZE[31193] │ $INFO[listitem.Property(NumEpisodes)] $LOCALIZE[31194]</value>	
+		<value condition="$EXP[est_une_saison] + !string.isempty(listitem.Episode)">$INFO[listitem.Episode] $LOCALIZE[31194]</value>
+		<value condition="$EXP[est_un_artiste] + !string.isempty(listitem.Property(Artist_Born))">$INFO[listitem.Property(Artist_Born)]</value>
+		<value condition="$EXP[est_un_album] + !string.isempty(listitem.Artist)">$INFO[listitem.Artist]</value>
+		<value condition="$EXP[est_une_chanson] + !string.isempty(listitem.AlbumArtist)">$INFO[listitem.AlbumArtist]</value>
+		<value condition="$EXP[est_un_addon] + !string.isempty(listitem.AddonCreator)">$INFO[listitem.AddonCreator]</value>
+	</variable>
+	<variable name="vues_infos_separation_4">
+		<value condition="!string.isempty(control.getlabel(774)) + !string.isempty(control.getlabel(775))"> │ </value>		
+	</variable>	
+	<variable name="vues_infos_5">
+		<value condition="[window.isvisible(MyPVRRecordings.xml) | window.isvisible(MyPVRTimers.xml)] + !string.isempty(listitem.duration) + !string.isequal(listitem.duration(hh:mm),00:00) + !string.isequal(listitem.duration(hh:mm),00:01) + !string.isequal(listitem.duration(hh:mm),00:02)">$INFO[listitem.duration(hh:mm)]</value>
+		<value condition="$EXP[est_un_episode] + !string.isempty(listitem.duration) + !string.isequal(listitem.duration(hh:mm),00:00) + !string.isequal(listitem.duration(hh:mm),00:01) + !string.isequal(listitem.duration(hh:mm),00:02)">$INFO[listitem.duration(hh:mm)]</value>
+		<value condition="$EXP[est_une_serie] + !string.isempty(listitem.duration) + !string.isequal(listitem.duration(hh:mm),00:00) + !string.isequal(listitem.duration(hh:mm),00:01) + !string.isequal(listitem.duration(hh:mm),00:02)">$INFO[listitem.duration(hh:mm)]</value>
+		<value condition="$EXP[est_une_saison] + !string.isempty(listitem.duration) + !string.isequal(listitem.duration(hh:mm),00:00) + !string.isequal(listitem.duration(hh:mm),00:01) + !string.isequal(listitem.duration(hh:mm),00:02)">$INFO[listitem.duration(hh:mm)]</value>
+		<value condition="$EXP[est_un_artiste] + !string.isempty(listitem.Property(Artist_Died))">$INFO[listitem.Property(Artist_Died)]</value>
+	</variable>	
+	<variable name="vues_infos_6">
+		<value condition="[$EXP[est_un_film] | $EXP[est_une_saga] | $EXP[est_une_serie] | $EXP[est_une_saison] | $EXP[est_un_episode] | window.isvisible(MyPVRRecordings.xml)] + !string.isempty(listitem.genre)">$INFO[listitem.genre]</value>
+		<value condition="$EXP[est_un_artiste] + !string.isempty(listitem.Property(Artist_Style))">$INFO[listitem.Property(Artist_Style)]</value>
+		<value condition="$EXP[est_un_album] + !string.isempty(listitem.genre)">$INFO[listitem.genre]</value>
+		<value condition="$EXP[est_une_chanson] + !string.isempty(listitem.TrackNumber)">$LOCALIZE[554] $INFO[listitem.TrackNumber] │ $INFO[listitem.duration]</value>
+		<value condition="$EXP[est_un_addon] + !string.isempty(listitem.AddonSummary)">$INFO[listitem.AddonSummary]</value>
 	</variable>
 	<variable name="rating">
 		<value condition="substring(listitem.mpaa,Rated G)">mpaa_general</value>
@@ -94,6 +295,20 @@
 		<onclick>SetProperty(Dialog.3.Label,$LOCALIZE[31161])</onclick>
 		<onclick>SetProperty(Dialog.4.Label,$LOCALIZE[31203])</onclick>
 		<onclick>RunScript(script.toolbox,info=selectdialog,header=$LOCALIZE[31198])</onclick>
+	</include>	
+	
+	<include name="image_fond">																													<description>image de fond</description>
+	<control type="videowindow">		
+		<top>1080</top>
+	</control>
+	<control type="image">																														<description>masque fond si meteo</description>	
+		<texture>commun/fond.png</texture>	
+	</control>
+	</include>
+	
+	<include name="animation_dialogue">																											<description>animation des fenetres de dialogue</description>
+		<animation effect="fade" start="0" end="100" time="100" reversible="false">windowopen</animation>
+		<animation effect="fade" start="100" end="0" time="100" reversible="false">windowclose</animation>
 	</include>
 
 	<include name="FullscreenDimensions">
@@ -330,6 +545,68 @@
 
 
 		</focusedlayout>
+	</include>	
+	
+	<include name="item_menu_1">
+		<label></label>
+		<icon>menus/videos.png</icon>
+		<property name="action">activatewindow(videos,videodb://movies/titles,return)</property>
+		<visible>string.isempty(skin.string(masquer_menu_2)) + Library.HasContent(movies)</visible>
+	</include>
+	<include name="item_menu_2">
+	<label></label>
+		<icon>menus/series.png</icon>
+		<property name="action">activatewindow(videos,videodb://tvshows/titles,return)</property>
+		<visible>string.isempty(skin.string(masquer_menu_3)) + Library.HasContent(tvshows)</visible>	
+	</include>
+	<include name="item_menu_3">
+	<label></label>
+		<icon>menus/music.png</icon>
+		<property name="action">activatewindow(music,musicdb://albums,return)</property>
+		<visible>string.isempty(skin.string(masquer_menu_4)) + Library.HasContent(music)</visible>	
+	</include>
+	<include name="item_menu_4">
+	<label></label>
+		<icon>menus/pictures.png</icon>
+		<property name="action">action(right)</property>
+		<visible>string.isempty(skin.string(masquer_menu_5))</visible>
+	</include>
+	<include name="item_menu_5">
+	<label></label>
+		<icon>menus/livetv.png</icon>
+		<property name="action">activatewindow(TVGuide)</property>
+		<visible>string.isempty(skin.string(masquer_menu_6)) + System.HasPVRAddon</visible>	
+	</include>
+	<include name="item_menu_6">
+	<label></label>
+		<icon>menus/weather.png</icon>
+		<property name="action">action(right)</property>
+		<visible>string.isempty(skin.string(masquer_menu_7)) + !String.IsEmpty(Weather.Plugin) + !string.isempty(Weather.Location)</visible>
+	</include>
+	
+	<include name="item_menu_10">	
+		<label></label>
+		<icon>menus/videos.png</icon>
+	</include>	
+	<include name="item_menu_20">	
+		<label></label>
+		<icon>menus/series.png</icon>
+	</include>		
+	<include name="item_menu_30">	
+		<label></label>
+		<icon>menus/music.png</icon>
+	</include>	
+	<include name="item_menu_40">	
+		<label></label>
+		<icon>menus/pictures.png</icon>						
+	</include>	
+	<include name="item_menu_50">	
+		<label></label>
+		<icon>menus/livetv.png</icon>
+	</include>		
+	<include name="item_menu_60">	
+		<label></label>
+		<icon>menus/weather.png</icon>
 	</include>
 
 

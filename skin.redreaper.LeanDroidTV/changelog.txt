@@ -1,3 +1,9 @@
+[v5.0.0]
+-Addon Browser is now accessible.
+-Video Info Page is refreshed.
+-Media Sources Code updated (fixes issue of screen turning black and being stuck)
+-New zip system used for updating process
+-Icons updated to be more materialistic. 
 [v4.5.0]
 -Bug Repairs
 -File Icons changed

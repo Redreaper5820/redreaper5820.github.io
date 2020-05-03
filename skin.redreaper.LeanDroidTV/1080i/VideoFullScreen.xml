@@ -360,7 +360,7 @@
 					<visible>VideoPlayer.Content(LiveTV)</visible>
 					<left>920</left>
 					<top>0</top>
-					<width>125</width>
+					<width>200</width>
 					<height>40</height>
 					<font>font15</font>
 					<align>right</align>
