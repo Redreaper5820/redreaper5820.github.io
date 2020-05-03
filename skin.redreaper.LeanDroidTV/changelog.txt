@@ -1,3 +1,9 @@
+[v5.1.0]
+-All new refreshed design 
+-The skin is more materialistic
+-Video doesn't play from the video Info page 
+-Addon Browser is now completely functioning.
+-Dialogs are fixed
 [v5.0.1]
 -Minor bug fix 
 [v5.0.0]

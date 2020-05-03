@@ -8,7 +8,7 @@
 	<control type="label">																														<description>horloge</description>
 		<right>60</right>
 		<height>116</height>			
-		<font>menu</font>
+		<font>card28</font>
 		<textcolor>80ffffff</textcolor>
 		<align>right</align>
 		<label>$INFO[system.time(hh:mm)]</label>		
@@ -16,7 +16,7 @@
 	<control type="label" id="2">																												<description>titre</description>	
 		<height>140</height>
 		<align>center</align>
-		<font>titre</font>		
+		<font>card28</font>		
 	</control>	
 	<include content="barre_separation_horizontale">																							<description>barre de separation horizontale</description>
 		<param name="left" value="50"/> 
@@ -114,7 +114,7 @@
 		<textoffsetx>20</textoffsetx>
 		<height>80</height>
 		<textcolor>80ffffff</textcolor>
-		<font>label_parametres</font>
+		<font>card26</font>
 	</control>	
 	<control type="grouplist" id="8000">																										<description>liste boutons</description>	
 		<top>200</top>

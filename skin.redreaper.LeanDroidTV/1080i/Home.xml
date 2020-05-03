@@ -461,8 +461,26 @@
 
 
 
-					</item>>
+					</item>
 					<item id="5">
+						<label>filemanager</label>
+						<icon>icon2.png</icon>
+						<thumb>ic_settings_filemanager.png</thumb>
+						<onclick>ActivateWindow(filemanager)</onclick>
+
+
+
+					</item>
+					<item id="6">
+						<label>addons</label>
+						<icon>icon2.png</icon>
+						<thumb>ic_settings_addons.png</thumb>
+						<onclick>ActivateWindow(addonbrowser)</onclick>
+
+
+
+					</item>
+					<item id="7">
 						<label>exit</label>
 						<icon>icon2.png</icon>
 						<thumb>ic_settings_power.png</thumb>

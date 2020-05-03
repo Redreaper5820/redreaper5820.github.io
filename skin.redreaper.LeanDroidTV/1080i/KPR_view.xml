@@ -20,8 +20,8 @@
 		<top>90</top>
 		<height>50</height>
 		<textcolor>Material_Teal</textcolor>
-		<font>RobotoCondensed-Light</font>
-		<label>$INFO[container.numitems] $LOCALIZE[31036] │ $LOCALIZE[31276] $INFO[container.currentitem]</label>
+		<font>card22</font>
+		<label>$INFO[container.currentitem] $LOCALIZE[31036] of $LOCALIZE[31276] $INFO[container.numitems]</label>
 	</control>
 	<control type="image">																														<description>notation</description>
 		<centerleft>50%</centerleft>
@@ -38,8 +38,8 @@
 		<height>50</height>
 		<align>right</align>
 		<textcolor>Material_Teal</textcolor>
-		<font>RobotoCondensed-Light</font>
-		<label>$LOCALIZE[31275] [LOWERCASE]$INFO[container.sortmethod][/LOWERCASE] │ $INFO[container.sortorder]</label>
+		<font>card22</font>
+		<label>$LOCALIZE[31275] $INFO[container.sortmethod] in $INFO[container.sortorder]</label>
 	</control>
 	<control type="group">																														<description>outstanding 701</description>
 		<visible>control.isvisible(701)</visible>
@@ -65,11 +65,11 @@
 	</control>
 	<control type="label">																														<description>title</description>	
 		<left>90</left>
-		<top>30</top>
+		<top>40</top>
 		<width>1620</width>
 		<height>116</height>
 		<textcolor>white</textcolor>
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<label>$VAR[vues_titre]$VAR[vues_titre_bis]</label>
 		<animation effect="slide" start="0,0" end="10,0" condition="control.isvisible(701)">Conditional</animation>
 		<visible>control.hasfocus(700) | control.hasfocus(701) | control.hasfocus(60) | control.hasfocus(61)</visible>
@@ -80,7 +80,7 @@
 		<width>1020</width>
 		<height>116</height>
 		<textcolor>white</textcolor>
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<label>$VAR[vues_titre]$VAR[vues_titre_bis]</label>
 		<animation effect="slide" start="0,0" end="10,0" condition="control.isvisible(701)">Conditional</animation>
 		<visible>!control.hasfocus(700) + !control.hasfocus(701) + !control.hasfocus(60) + !control.hasfocus(61)</visible>
@@ -356,7 +356,7 @@
 		<left>20</left>
 		<height>50</height>
 		<textcolor>white</textcolor>
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<align>center</align>		
 		<label>$VAR[vues_infos_2]$VAR[vues_infos_separation_2]$VAR[vues_infos_3]$VAR[vues_infos_separation_3]$VAR[vues_infos_4]$VAR[vues_infos_separation_4]$VAR[vues_infos_5]</label>		
 	</control>
@@ -370,7 +370,7 @@
 		<height>240</height>
 		<right>890</right>
 		<left>40</left>	
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<textcolor>white</textcolor>
 		<align>justify</align>
 		<label>$VAR[vues_infos_resume]</label>	
@@ -386,7 +386,7 @@
 		<right>870</right>
 		<left>20</left>
 		<height>50</height>
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<textcolor>white</textcolor>
 		<align>center</align>		
 		<label>$VAR[vues_infos_6]</label>		
@@ -535,7 +535,7 @@
 		<height>138</height>
 		<right>20</right>
 		<left>20</left>	
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<textcolor>white</textcolor>
 		<align>justify</align>
 		<label>$VAR[vues_infos_resume]</label>	
@@ -551,7 +551,7 @@
 		<right>955</right>
 		<left>20</left>
 		<height>50</height>
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<textcolor>white</textcolor>
 		<label>$VAR[vues_infos_6]</label>		
 	</control>
@@ -561,7 +561,7 @@
 		<left>955</left>
 		<height>50</height>
 		<textcolor>white</textcolor>
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<align>right</align>		
 		<label>$VAR[vues_infos_2]$VAR[vues_infos_separation_2]$VAR[vues_infos_3]$VAR[vues_infos_separation_3]$VAR[vues_infos_4]$VAR[vues_infos_separation_4]$VAR[vues_infos_5]</label>		
 	</control>
@@ -745,7 +745,7 @@
 		<width>auto</width>
 		<height>60</height>
 		<textcolor>darkgrey</textcolor>
-		<font>RobotoCondensed-Light</font>
+		<font>card22</font>
 		<label>[I]$VAR[legende_infos][/I]</label>
 	</control>	
 	</control>

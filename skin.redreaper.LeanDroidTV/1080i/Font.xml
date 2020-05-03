@@ -9,6 +9,12 @@
 		</font>
 
 		<font>
+			<name>card0</name>
+			<filename>RobotoCondensed-Regular.ttf</filename>
+			<size>0</size>
+		</font>
+
+		<font>
 			<name>card20</name>
 			<filename>RobotoCondensed-Regular.ttf</filename>
 			<size>20</size>
@@ -175,6 +181,11 @@
 			<name>fontContextMenu</name>
 			<filename>Roboto-Regular.ttf</filename>
 			<size>18</size>
+		</font>	
+		<font>
+		<name>pseudo_music</name>
+		<filename>arial.ttf</filename>
+		<size>9</size>
 		</font>
 		<!-- Title Fonts -->
 		<font>
@@ -305,6 +316,17 @@
 			<name>WeatherTemp</name>
 			<filename>Roboto-Bold.ttf</filename>
 			<size>80</size>
+		</font>
+		<font>
+		<name>font60</name>
+		<filename>NotoSans-Regular.ttf</filename>
+		<size>60</size>
+		<style>lighten</style>
+		</font>
+		<font>
+		<name>font_clock</name>
+		<filename>Roboto-Thin.ttf</filename>
+		<size>70</size>
 		</font>
 	</fontset>
 	<fontset id="DefaultNoCaps" idloc="31391">

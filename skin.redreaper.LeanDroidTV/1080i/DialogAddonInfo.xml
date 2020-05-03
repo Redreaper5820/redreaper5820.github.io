@@ -41,7 +41,7 @@
 		<top>35</top>
 		<height>60</height>			
 		<width max="1020">auto</width>				
-		<font>menu</font>
+		<font>card28</font>
 		<textcolor>ffffffff</textcolor>
 		<align>center</align>
 		<label>$INFO[listitem.AddonName]</label>
@@ -64,7 +64,7 @@
 		<top>35</top>
 		<height>60</height>			
 		<width>140</width>				
-		<font>menu</font>
+		<font>card28</font>
 		<textcolor>Material_teal</textcolor>
 		<align>center</align>
 		<label>$INFO[system.time(hh:mm)]</label>		
@@ -100,43 +100,43 @@
 		</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[31150][/B]   $INFO[listitem.AddonOrigin]</label>
 		<visible>!string.isempty(listitem.AddonOrigin) + !string.isequal(listitem.AddonOrigin,$LOCALIZE[1446])</visible>			
 	</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[21863][/B]   $INFO[listitem.AddonCreator]</label>
 		<visible>!string.isempty(listitem.AddonCreator)</visible>			
 	</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[19114][/B]   $INFO[listitem.AddonVersion]</label>
 		<visible>!string.isempty(listitem.AddonVersion)</visible>			
 	</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[35257][/B]   $INFO[listitem.AddonInstallDate]</label>
 		<visible>!string.isEmpty(ListItem.AddonInstallDate) + !string.contains(ListItem.AddonInstallDate,1601)</visible>			
 	</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[12014][/B]   $INFO[listitem.AddonLastUpdated]</label>
 		<visible>!string.isEmpty(ListItem.AddonLastUpdated)</visible>			
 	</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[31299][/B]   $INFO[listitem.AddonLastUsed]</label>
 		<visible>!string.isEmpty(ListItem.AddonLastUsed)</visible>			
 	</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[21802][/B]   $INFO[listitem.AddonSize]</label>
 		<visible>!string.isEmpty(ListItem.AddonSize)</visible>			
 	</control>	
@@ -207,13 +207,13 @@
 	</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[24068][/B]</label>
 		<visible>ListItem.Property(Addon.HasUpdate)</visible>			
 	</control>
 	<control type="label">
 		<height>20</height>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<textcolor>80ffffff</textcolor><label>[B]$LOCALIZE[31301][/B]</label>
 		<visible>!ListItem.Property(Addon.HasUpdate)</visible>			
 	</control>	
@@ -224,7 +224,7 @@
 		<width>500</width>
 		<height>20</height>
 		<align>right</align>
-		<font>texte_infos</font>
+		<font>card22</font>
 		<label>[CAPITALIZE][B]$LOCALIZE[21371][/B][/CAPITALIZE]</label>
 		<visible>!integer.isequal(container(50).numallitems,0)</visible>		
 	</control>
@@ -388,7 +388,7 @@
 		<left>830</left>
 		<height>398</height>
 		<width>1020</width>
-		<font>texte_resume</font>
+		<font>font12</font>
 		<align>justify</align>
 		<label>[B]$INFO[ListItem.AddonSummary][/B][CR][CR]$INFO[listitem.AddonDescription][CR][CR][I]$INFO[ListItem.AddonDisclaimer][/I]</label>	
 		<autoscroll delay="20000" time="3000" repeat="20000"></autoscroll>			
@@ -398,7 +398,7 @@
 		<left>830</left>
 		<height>398</height>
 		<width>1020</width>
-		<font>texte_resume</font>
+		<font>font12</font>
 		<align>center</align>
 		<textcolor>80ffffff</textcolor>
 		<label></label>		
@@ -422,7 +422,7 @@
 		<width>auto</width>
 		<height>60</height>
 		<textcolor>80ffffff</textcolor>
-		<font>infos</font>
+		<font>card22</font>
 		<label></label>
 	</control>	
 	</control>
