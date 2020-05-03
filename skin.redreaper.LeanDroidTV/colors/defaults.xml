@@ -20,8 +20,11 @@
 	<color name="mattwitchpurple">FF6441a5</color>
 	<color name="matplexgrey">FF484848</color>
 	<color name="netflixred">FFB9090B</color>
-	<color name="yahoopurple">ab51ff</color>
-	<color name="Dialogblue">#E3F2FD</color>
+	<color name="yahoopurple">FFab51ff</color>
+	<color name="dialogblue">FFE3F2FD</color>
+	<color name="gmatblue">FFa9feec</color>
+	<color name="gmatlbgrey">FF607d8b</color>
+	<color name="gmatdbgrey">FF263238</color>
 
 	
 </colors>

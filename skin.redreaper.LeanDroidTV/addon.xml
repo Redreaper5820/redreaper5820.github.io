@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <addon
-  id="skin.redreaper5820.leanDroidTV"
-  version="4.0.0"
+  id="skin.avi.koDroidTV"
+  version="4.5.0"
   name="koDroidTV"
-  provider-name="redreaper5820">
+  provider-name="Avi">
   <requires>
     <import addon="xbmc.gui" version="5.14.0"/>
 		<import addon="script.toolbox" version="1.1.1"/>
