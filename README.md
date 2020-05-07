@@ -1,2 +1,2 @@
 LeanDroid 
-The skin based on Android TV. Using Confluence base and building on Digital High's work on DroidTV
+The skin based on Android TV. Using Confluence base and building on Digital High's work on DroidTV and KDR skin.
